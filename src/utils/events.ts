@@ -12,7 +12,6 @@ declare global {
 interface Payload {
   screensaver: string;
   icon: string;
-  bundle: string;
 }
 
 export const sendDataToGA = async (payload: Payload) => {
@@ -23,7 +22,7 @@ export const sendDataToGA = async (payload: Payload) => {
     }-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
     await fetch(
-      "https://script.google.com/macros/s/AKfycbyjRZp9YfrtRo4V4i5BGpqM0yIHtH8FOY0DQQEGBzhQZ_rPBhp0zW_NeiKa5yxlsqo/exec",
+      "https://script.google.com/macros/s/AKfycbyrDlN_oOBa62j8lbD-FaLrwUsasEGQ5phri3rab0iX35db8Bd4wB2U3wPW-czeFy3a/exec",
       {
         redirect: "follow",
         method: "POST",

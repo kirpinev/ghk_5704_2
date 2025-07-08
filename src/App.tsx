@@ -40,7 +40,6 @@ export const App = () => {
     sendDataToGA({
       icon: iconType,
       screensaver: backgroundType,
-      bundle: "0",
     }).then(() => {
       setLoading(false);
       setThx(true);
